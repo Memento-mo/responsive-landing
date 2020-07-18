@@ -1,0 +1,92 @@
+.main-contact-us {
+  background: var(--light-gray);
+}
+
+.main-contact-us_form {
+  margin-top: 100px;
+}
+
+.main-contact-us_form_full-name {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-contact-us_form_full-name .main-contact-us_form-item:first-child {
+  margin-right: 30px;
+}
+
+.main-contact-us_form-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 35px;
+  color: var(--blue);
+  font-size: 35px;
+}
+
+label {
+  font-size: 35px;
+  text-align: left;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.input-field {
+  padding: 42px 20px;
+  border: none;
+  box-shadow: 7px 6px 6px -3px rgba(8, 100, 177, 0.2);
+  color: var(--blue);
+  font-size: 35px;
+}
+
+.button-submit {
+  color: var(--white);
+  background: var(--blue);
+  font-size: 30px;
+  font-weight: 600;
+  padding: 20px 60px 20px 30px;
+  margin-top: 100px;
+  border: none;
+  position: relative;
+  border: 2px solid var(--blue);
+  transition: 0.3s ease;
+  box-shadow: 7px 6px 14px 1px rgba(8, 100, 177, 0.4);
+}
+
+.button-submit:after {
+  content: '';
+  height: 31px;
+  width: 33px;
+  background: url('../img/Icon\ ionic-md-send.png') no-repeat center;
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  transition: 0.3s ease;
+}
+
+.button-submit:hover:after {
+  background: url('../img/Icon\ ionic-md-send-blue.png') no-repeat center;
+}
+
+.button-submit:hover {
+  cursor: pointer;
+  background: var(--white);
+  color: var(--blue);
+}
+
+@media screen and (max-width: 1024px) {
+  .main-contact-us_form_full-name {
+    flex-wrap: wrap;
+  }
+  .main-contact-us_form_full-name .main-contact-us_form-item:first-child {
+    margin-right: 0px;
+  }
+  .main-contact-us_form-item input {
+    padding: 15px 20px;
+  }
+}

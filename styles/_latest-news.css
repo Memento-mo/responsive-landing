@@ -1,0 +1,29 @@
+.main-items_item-cart_img {
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-items_item-cart {
+  margin-top: 30px;
+  max-width: 450px;
+  box-shadow: 0 5px 10px 0 rgba(8, 100, 177, 0.2);
+}
+
+.main-items_item-cart_description {
+  text-align: left;
+  font-size: 20px;
+  padding: 37px;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  .main-items_item-cart {
+    max-width: 350px;
+  }
+
+  .main-items_item-cart_description {
+    font-size: 16px;
+  }
+}

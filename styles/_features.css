@@ -1,0 +1,38 @@
+.main-features {
+  background: var(--light-gray);
+}
+
+.main-features_img {
+  height: 250px;
+  width: 250px;
+  background-color: var(--blue);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45%;
+}
+
+.feature-flex {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  align-items: center;
+}
+
+.main-features_description {
+  padding-top: 30px;
+  line-height: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-features_img {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-features_img {
+    height: 170px;
+    width: 170px;
+  }
+}

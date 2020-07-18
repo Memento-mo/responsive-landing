@@ -1,0 +1,128 @@
+.footer {
+  color: var(--white);
+  background: var(--blue);
+  padding: 90px 0px 40px 0;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item__contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+}
+
+.footer-item__contacts-title {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.footer-item__contacts-place li {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.footer-item__company {
+  margin-top: 100px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.footer-item__links {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.footer-item__links-lists {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.footer-item__links-lists-item {
+  height: 60px;
+  width: 60px;
+  background-color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.footer-item:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-item__author {
+  font-size: 25px;
+}
+
+.footer-item__author-link {
+  margin-top: 22px;
+  font-size: 22px;
+}
+
+.footer-item__links-lists-item a {
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-item__contacts-title {
+    font-size: 30px;
+  }
+
+  .footer-item__links span {
+    font-size: var(--text-1024px);
+  }
+
+  .footer-item__author {
+    font-size: 20px;
+  }
+
+  .footer-item__company {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-items {
+    flex-direction: column;
+  }
+
+  .footer-item:last-child {
+    display: none;
+  }
+
+  .footer-item__contacts {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-item__contacts {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-item__company {
+    font-size: 14px;
+  }
+
+  .footer-item__contacts-place li {
+    font-size: 16px;
+  }
+
+  .footer-item__contacts-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+}

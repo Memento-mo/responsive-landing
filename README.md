@@ -1,1 +1,1 @@
-"# responsive-landing" 
+Responsive landing in pure css.
